@@ -10,19 +10,25 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
-
+const getRandomQuote = [
+  
+]
 
 
 /***
  * `getRandomQuote` function
 ***/
-
+function getRandomQuote(){
+  
+}
 
 
 /***
  * `printQuote` function
 ***/
+function printQuote(){
 
+}
 
 
 /***
