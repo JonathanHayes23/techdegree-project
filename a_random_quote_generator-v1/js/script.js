@@ -10,8 +10,37 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
-const getRandomQuote = [
-  
+const quotes = [
+  {
+    quote: `Everybody just has different steps in their life that they take to do what they should.
+    Read more at.`,
+    source: `Travis Scott`,
+    year: 2020,
+    tags: `hip-hop/rap`
+  },
+  {
+    quote: `We always forgive, but we don't forget easily.`,
+    source: `Travis Scott`,
+    citation: `houstonfornication`,
+    year: 2018
+  },
+  {
+    quote: `I pray that the demons go away, they hauntin' us.`,
+    source: `Travis Scott`,
+    citation: `pray 4 love`,
+    year: 2015
+  },
+  {
+    quote: `wish you were here`,
+    source: `Travis Scott`,
+    year:2018
+  },
+  {
+    quote: `I feel like God put me here to help out with people's soul, man.`,
+    source: `Travis Scott`,
+    year: 2022,
+    tags: `hip-hop/rap`
+  }
 ]
 
 
