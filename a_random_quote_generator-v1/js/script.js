@@ -46,6 +46,7 @@ const quotes = [
 
 /***
  * `getRandomQuote` function
+ * This JavaScript function randomly selects a quote from an array named quotes and returns the chosen quote.
 ***/
 
 function getRandomQuote(){
@@ -83,3 +84,20 @@ function printQuote() {
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
+
+/*
+This JavaScript code defines a function, randomBackgroundColor(), which generates a random RGB color value.
+It then applies this color as the background of the document's body element.
+*/
+
+function randomBackgroundColor() {
+  return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+}
+document.body.style.background = randomBackgroundColor();
+
+
+/*
+This code automates the change of the quote and color at timed intervals without requiring manual input.
+*/
+
+setInterval(printQuote, 10000);
