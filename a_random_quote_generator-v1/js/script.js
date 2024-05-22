@@ -57,9 +57,23 @@ function getRandomQuote(){
 
 /***
  * `printQuote` function
+ * this function dynamically generates HTML based on a randomly selected quote object, updates the DOM with the generated HTML, and changes the background color of the webpage.
 ***/
-function printQuote(){
+function printQuote() {
+  const randomQuote = getRandomQuote();
+  let html = `
+    <p class="quote">${randomQuote.quote}</p>
+    <p class="source">${randomQuote.source}
+  `;
 
+  if (randomQuote.citation) html += `<span class="citation">${randomQuote.citation}</span>`;
+  if (randomQuote.year) html += `<span class="year">${randomQuote.year}</span>`;
+  if (randomQuote.tags) html += `<span class="tags">${randomQuote.tags}</span>`;
+
+  html += `</p>`;
+  
+  document.getElementById('quote-box').innerHTML = html;
+  document.body.style.background = randomBackgroundColor();
 }
 
 
