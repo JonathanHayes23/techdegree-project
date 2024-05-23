@@ -13,7 +13,7 @@ project 1 - A Random Quote Generator
 const quotes = [
   {
     quote: `Everybody just has different steps in their life that they take to do what they should.
-    Read more at.`,
+    `,
     source: `Travis Scott`,
     year: 2020,
     tags: `hip-hop/rap`
