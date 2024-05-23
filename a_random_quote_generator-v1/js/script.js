@@ -77,14 +77,6 @@ function printQuote() {
   document.body.style.background = randomBackgroundColor();
 }
 
-
-/***
- * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
-***/
-
-document.getElementById('load-quote').addEventListener("click", printQuote, false);
-
 /*
 This JavaScript code defines a function, randomBackgroundColor(), which generates a random RGB color value.
 It then applies this color as the background of the document's body element.
@@ -93,7 +85,14 @@ It then applies this color as the background of the document's body element.
 function randomBackgroundColor() {
   return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
 }
-document.body.style.background = randomBackgroundColor();
+
+/***
+ * click event listener for the print quote button
+ * DO NOT CHANGE THE CODE BELOW!!
+***/
+
+document.getElementById('load-quote').addEventListener("click", printQuote, false);
+
 
 
 /*
